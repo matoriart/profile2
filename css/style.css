@@ -1,0 +1,685 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    height: 300vh;
+}
+@font-face {
+    font-family: 'Pastika';
+    src: url(../font/Pastika.ttf);
+}
+@font-face {
+    font-family: 'Genshin';
+    src: url(../font/zh-cn.ttf);
+}
+.header-container{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: aliceblue;
+}
+.yt-icon{
+    display: flex;
+    margin-left: 600px;
+    width: 107px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: black;
+    transition: 0.3s;
+}
+.yt-icon:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+}
+.yt-icon a{
+    letter-spacing: 2px;
+    font-family: "Pastika";
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.brand{
+    margin-left: 10px;
+}
+.brand span{
+    color: red;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    margin-left: 700px;
+}
+.nav-list ul li{
+    padding: 0 23px;
+}
+.nav-list ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    font-family:"Pastika";
+}
+.nav-link{
+    display: flex;
+    padding: 5px 0;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+.nav-link:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: black;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-link:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: black;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-link:hover{
+    color: black;
+}
+
+.nav-link:hover:before{
+    right: 0;
+}
+.nav-link:hover:after{
+    left: 0;
+}
+.sec1{
+    background-image: url(../img/windows_xp_original-wallpaper-3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+.welcome{
+    width: 600px;
+    height: 250px;
+    padding-top: 300px;
+    margin-left: 200px;
+}
+.welcome h1{
+    font-family: "Pastika";
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.welcome h1 span{
+    font-family: "Pastika";
+    font-size: 40px;
+    color: crimson;
+}
+.welcome p{
+    font-family: "Genshin";
+    font-size: 25px;
+    color: black;
+    letter-spacing: 2px;
+}
+.sec2{
+    width: auto;
+    height: 900px;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.87);
+}
+.about{
+    width: 600px;
+    height: 250px;
+    padding-top: 100px;
+    margin-left: 600px;
+}
+.about h1{
+    color: white;
+    font-family: "Pastika";
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.about h1 span{
+    font-family: "Pastika";
+    font-size: 40px;
+    color: crimson;
+}
+.about p{
+    color: white;
+    text-align: center;
+    font-family: "Genshin";
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.hobby{
+    width: 600px;
+    height: 100px;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.hobby h1{
+    color: white;
+    font-family: "Pastika";
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.card-class{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.card{
+    margin-left: 50px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+    transform: scale(1.1);
+}
+.card2{
+    margin-left: 50px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+.card2:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+    transform: scale(1.1);
+}
+.card3{
+    margin-left: 50px;
+    width: 500px;
+    height: 200px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+.card3:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+    transform: scale(1.1);
+}
+.card-container{
+    padding: 2px 16px;
+}
+.card-container h3{
+    color: white;
+    font-family: "Pastika";
+    letter-spacing: 1px;
+    text-align: center;
+}
+.card-container p{
+    color: white;
+    font-family: "Pastika";
+    letter-spacing: 1px;
+    text-align: center;
+}
+.sec3{
+    width: auto;
+        height: 900px;
+        box-shadow: 0 8px 8px 0 rgba(247, 0, 0, 0.87);
+}
+.skill{
+    width: 600px;
+    height: 250px;
+    padding-top: 100px;
+    margin-left: 600px;
+}
+.skill h1{
+    color: black;
+    font-family: "Pastika";
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.skill h1 span{
+    font-family: "Pastika";
+    font-size: 40px;
+    color: crimson;
+}
+.skillbar{
+    margin-top: 20px;
+    color: black;
+}
+.skill-container{
+    margin-left: 102px;
+    width: 450px;
+    height: 250px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.87);
+    border-radius: 12px;
+}
+.skill-container2{
+    margin-top: -200px;
+    margin-left: 700px;
+    width: 450px;
+    height: 250px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.87);
+    border-radius: 12px;
+}
+.skill-container3{
+    margin-top: -300px;
+    margin-left: 1300px;
+    width: 450px;
+    height: 250px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.87);
+    border-radius: 12px;
+}
+.skillbar p{
+    font-family: "Genshin";
+    font-size: 20px;
+    text-align: center;
+}
+.skillbox{
+    margin-left: 50px;
+    text-align: right;
+    width: 75%;
+    height: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.87);
+}
+.bar{
+    height: 20px;
+    width: 35%;
+    background-color: #b65908;
+}
+.bar p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar2{
+    height: 20px;
+    width: 60%;
+    background-color: #FB7A09;
+}
+.bar2 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar3{
+    height: 20px;
+    width: 20%;
+    background-color: #fb0909;
+}
+.bar3 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar4{
+    height: 20px;
+    width: 54%;
+    background-color: #FB7A09;
+}
+.bar4 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar5{
+    height: 20px;
+    width: 59%;
+    background-color: #FB7A09;
+}
+.bar5 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar6{
+    height: 20px;
+    width: 65%;
+    background-color: #fb0909;
+}
+.bar6 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar7{
+    height: 20px;
+    width: 35%;
+    background-color: #9e4e09;
+}
+.bar7 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar8{
+    height: 20px;
+    width: 20%;
+    background-color: #fb0909;
+}
+.bar8 p{
+    font-size: 20px;
+    text-align: right;
+}
+.bar9{
+    height: 20px;
+    width: 1%;
+    background-color: #ff7474;
+}
+.bar9 p{
+    font-size: 20px;
+    text-align: right;
+}
+.sec4{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    box-shadow: 0 0 10px black,
+                0 0 20px black,
+                0 0 40px black;
+}
+.contact{
+    width: 600px;
+    height: 250px;
+    padding-top: 50px;
+    margin-left: 800px;
+}
+.contact h1{
+    color: white;
+    font-family: "Pastika";
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.contact h1 span{
+    color: crimson;
+}
+.social-media1{
+    width: 50px;
+    height: 55px;
+    margin-top: -100px;
+    margin-left: 750px;
+    transition: .3s;
+}
+
+.social-media1:hover{
+    transform: scale(1.1);
+    border-bottom: 1px solid rgb(67, 220, 20);
+}
+.social-media2{
+    width: 50px;
+    height: 55px;
+    margin-top: -52px;
+    margin-left: 830px;
+    transition: .3s;
+}
+.social-media2:hover{
+    transform: scale(1.1);
+    border-bottom: 1px solid rgb(20, 163, 220);
+}
+.social-media3{
+    width: 50px;
+    height: 55px;
+    margin-top: -53px;
+    margin-left: 910px;
+    transition: .3s;
+}
+.social-media3:hover{
+    transform: scale(1.1);
+    border-bottom: 1px solid rgb(133, 3, 165);
+}
+.social-media4{
+    width: 50px;
+    height: 50px;
+    margin-top: -53px;
+    margin-left: 990px;
+    transition: .3s;
+    
+}
+.social-media4:hover{
+    transform: scale(1.1);
+    border-bottom: 1px solid crimson;
+}
+@media screen and (max-width: 600px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .header-container{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: aliceblue;
+    }
+    .yt-icon{
+        display: flex;
+        margin-left: 50px;
+        width: 107px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: black;
+        transition: 0.3s;
+    }
+    .yt-icon:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+    }
+    .yt-icon a{
+        letter-spacing: 2px;
+        font-family: "Pastika";
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .brand{
+        margin-left: 10px;
+    }
+    .brand span{
+        color: red;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-list ul{
+        display: flex;
+        margin-left: 20px;
+    }
+    .nav-list ul li{
+        padding: 0 23px;
+    }
+    .nav-list ul li a{
+        text-decoration: none;
+        color: gray;
+        font-size: 20px;
+        font-family:"Pastika";
+    }
+    .nav-link{
+        display: flex;
+        padding: 5px 0;
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .nav-link:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 50%;
+        height: 2px;
+        background: black;
+        transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .nav-link:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        width: 50%;
+        height: 2px;
+        background: black;
+        transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .nav-link:hover{
+        color: black;
+    }
+    
+    .nav-link:hover:before{
+        right: 0;
+    }
+    .nav-link:hover:after{
+        left: 0;
+    }
+    .sec1{
+        background-image: url(../img/windows_xp_original-wallpaper-3840x2160.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 100%;
+        height: 500px;
+    }
+    .welcome{
+        width: 400px;
+        height: 150px;
+        padding-top: 150px;
+        margin-left: 100px;
+        text-align: center;
+    }
+    .welcome h1{
+        font-family: "Pastika";
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    .welcome h1 span{
+        font-family: "Pastika";
+        font-size: 35px;
+        color: crimson;
+    }
+    .welcome p{
+        font-family: "Genshin";
+        font-size: 20px;
+        color: black;
+        letter-spacing: 2px;
+    }
+    .sec2{
+        width: 100%;
+        height: 700px;
+        background-color: black;
+        border: 1px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.87);
+    }
+    .about{
+        width: 400px;
+        height: 150px;
+        padding-top: 100px;
+        margin-left: 100px;
+    }
+    .about h1{
+        color: white;
+        font-family: "Pastika";
+        font-size: 35px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .about h1 span{
+        font-family: "Pastika";
+        font-size: 35px;
+        color: crimson;
+    }
+    .about p{
+        color: white;
+        text-align: center;
+        font-family: "Genshin";
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .hobby{
+        width: 400px;
+        height: 100px;
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    .hobby h1{
+        color: white;
+        font-family: "Pastika";
+        font-size: 35px;
+        letter-spacing: 1px;
+    }
+    .card-class{
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    .card{
+        margin-left: 50px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid white;
+        transition: 0.3s;
+        background-image: url(../img/gameLogo.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+    }
+    .card img{
+        display: none;
+    }
+    .card:hover{
+        box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+        transform: scale(1.1);
+    }
+    .card2{
+        margin-left: 50px;
+        width: 500px;
+        height: 200px;
+        border: 1px solid white;
+        transition: 0.3s;
+    }
+    .card2:hover{
+        box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+        transform: scale(1.1);
+    }
+    .card3{
+        margin-left: 50px;
+        width: 500px;
+        height: 200px;
+        border: 1px solid white;
+        transition: 0.3s;
+    }
+    .card3:hover{
+        box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.87);
+        transform: scale(1.1);
+    }
+    .card-container{
+        padding: 2px 16px;
+    }
+    .card-container h3{
+        color: white;
+        font-family: "Pastika";
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .card-container p{
+        color: white;
+        font-family: "Pastika";
+        letter-spacing: 1px;
+        text-align: center;
+    }
+}
